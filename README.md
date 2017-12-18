@@ -2,7 +2,7 @@
 Fetches amount and value of privately held IOTA address via IOTASear.ch and returns it as a security.
 This can be also be used to track your cold storage.
 
-Do you like this extension? Donation IOTA address: OUDFKXFDRSWBCTRSJ9MMFGVENOFGHCADQTJUIKTZJPLPGHEQBCLCZPIANOZ9NO9XQVRRHJNOIJNJTPJRWJBWJXHGFW
+Do you like this extension? Donation IOTA address: `OUDFKXFDRSWBCTRSJ9MMFGVENOFGHCADQTJUIKTZJPLPGHEQBCLCZPIANOZ9NO9XQVRRHJNOIJNJTPJRWJBWJXHGFW`
 
 This repository is heavily inspired by [Bitcoin-MoneyMoney](https://github.com/Jacubeit/Bitcoin-MoneyMoney). Thanks!
 
