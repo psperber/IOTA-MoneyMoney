@@ -10,7 +10,7 @@ This repository is heavily inspired by [Bitcoin-MoneyMoney](https://github.com/J
 
 You can get a signed version of this extension from
 
-* my [GitHub releases page](https://github.com/psperber/IOTA-MoneyMoney/releases/tag/v0.2), or
+* my [GitHub releases page](https://github.com/psperber/IOTA-MoneyMoney/releases/tag/v0.1), or
 * the [MoneyMoney Extensions](https://moneymoney-app.com/extensions/) page
 
 Once downloaded, move `IOTA.lua` to your MoneyMoney Extensions folder.
