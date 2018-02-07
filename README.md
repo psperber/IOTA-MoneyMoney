@@ -1,5 +1,5 @@
 # IOTA-MoneyMoney
-Fetches amount and value of privately held IOTA address via IOTASear.ch and returns it as a security.
+Fetches amount and value of privately held IOTA address via https://nodes.iota.cafe/ and returns it as a security.
 This can be also be used to track your cold storage.
 
 Do you like this extension? Donation IOTA address: `OUDFKXFDRSWBCTRSJ9MMFGVENOFGHCADQTJUIKTZJPLPGHEQBCLCZPIANOZ9NO9XQVRRHJNOIJNJTPJRWJBWJXHGFW`
@@ -15,15 +15,22 @@ You can get a signed version of this extension from
 
 Once downloaded, move `IOTA.lua` to your MoneyMoney Extensions folder.
 
-**Note:** This extension requires MoneyMoney **Version 2.3.4** or newer.
-
 ## MoneyMoney Setup
 
 Add a new account (type "IOTA"). 
 
-**Use your IOTA adresses coma seperated as user name**  
-`1KuWLoZuoJgz3N6sLoPwGth9XGm8YuFTGt, 1KuWLoZuoJgz3N6sLoPwGth9XGm8YuFTGt` (example)
+**Use your IOTA adresses coma seperated as user name**
+
+```
+BLNGFQXMLCZ9VSENI9IVZZMYUHZLUBKHEVYARVHZIKYTTGGFUFNMLZDXJPMQVNHWGM9CQNIWATMLVQSFQ, LLWMD9SFZFOVVXJQDGFHCTGQFWEAJOJSNDCCPHTKULJTBMGNO9WZYIMZFTAOODFBKABVRYIJXK9ZP9F9U
+```
+
+(example)
 
 **Use whatever you want as password**  
-`123` (example)
 
+```
+123
+```
+
+(example)
