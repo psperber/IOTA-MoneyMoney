@@ -30,7 +30,7 @@
 
 
 WebBanking {
-    version = 0.1,
+    version = 0.2,
     description = "Include your IOTAs as cryptoportfolio in MoneyMoney by providing IOTA addresses as usernme (comma seperated) and a random Password",
     services = { "IOTA" }
 }
