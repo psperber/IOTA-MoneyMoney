@@ -117,7 +117,7 @@ function cryptocompareRequestUrl()
 end
 
 function iotaRequestUrl()
-    return "https://nodes.iota.cafe/"
+    return "https://iotanode.host/node"
 end
 
 -- from http://lua-users.org/wiki/SplitJoin
