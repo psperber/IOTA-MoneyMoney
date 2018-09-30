@@ -104,7 +104,9 @@ function requestIOTAQuantitiesForIOTAAddresses(iotaAddresses)
     headers["X-IOTA-API-Version"] = "1"
 
     local postContent = '{"command":"getBalances","addresses":['.. strjoin(',', iotaAddressesWithoutChecksum) ..'],"threshold":100}'
+    print(postContent)
     content = connection:request("POST", iotaRequestUrl(), postContent, "application/json", headers)
+    print(content)
 
     json = JSON(content)
     return json:dictionary()["balances"]
@@ -117,7 +119,7 @@ function cryptocompareRequestUrl()
 end
 
 function iotaRequestUrl()
-    return "https://iotanode.host/node"
+    return "https://nodes.iota.cafe"
 end
 
 -- from http://lua-users.org/wiki/SplitJoin
