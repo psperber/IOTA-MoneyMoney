@@ -119,7 +119,7 @@ function cryptocompareRequestUrl()
 end
 
 function iotaRequestUrl()
-    return "https://nodes.iota.cafe"
+    return "https://trinity.iota-tangle.io:14265"
 end
 
 -- from http://lua-users.org/wiki/SplitJoin
