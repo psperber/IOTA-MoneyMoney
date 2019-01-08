@@ -119,7 +119,7 @@ function cryptocompareRequestUrl()
 end
 
 function iotaRequestUrl()
-    return "https://trinity.iota-tangle.io:14265"
+    return "https://nodes.thetangle.org:443"
 end
 
 -- from http://lua-users.org/wiki/SplitJoin
