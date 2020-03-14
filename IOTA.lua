@@ -1,6 +1,6 @@
 -- Inofficial IOTA Extension for MoneyMoney
--- Fetches IOTA quantity for addresses via nodes.iota.cafe
--- Fetches IOTA price in EUR via coinmarketcap API
+-- Fetches IOTA quantity for addresses via nodes.thetangle.org
+-- Fetches IOTA price in EUR via CoinGecko API
 -- Returns cryptoassets as securities
 --
 -- Username: IOTA Adresses comma seperated
@@ -61,7 +61,7 @@ end
 
 function RefreshAccount(account, since)
     local s = {}
-    local prices = requestIOTAPrice()
+    local price = requestIOTAPrice()
     local addresses = strsplit(",%s*", iotaAddresses)
     local balances = requestIOTAQuantitiesForIOTAAddresses(addresses)
 
@@ -71,7 +71,7 @@ function RefreshAccount(account, since)
             currency = nil,
             market = "cryptocompare",
             quantity = balances[i] / 1000000, -- convert to MIOTA
-            price = prices["price_eur"],
+            price = price,
         }
     end
 
@@ -87,7 +87,7 @@ function requestIOTAPrice()
     response = connection:request("GET", cryptocompareRequestUrl(), {})
     json = JSON(response)
 
-    return json:dictionary()[1]
+    return json:dictionary()["iota"]["eur"]
 end
 
 --
@@ -115,7 +115,7 @@ end
 
 -- Helper Functions
 function cryptocompareRequestUrl()
-    return "https://api.coinmarketcap.com/v1/ticker/iota/?convert=EUR"
+    return "https://api.coingecko.com/api/v3/simple/price?ids=iota&vs_currencies=eur"
 end
 
 function iotaRequestUrl()
