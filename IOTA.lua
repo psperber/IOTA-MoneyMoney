@@ -30,7 +30,7 @@
 
 
 WebBanking {
-    version = 0.1,
+    version = 0.2,
     description = "Include your IOTAs as cryptoportfolio in MoneyMoney by providing IOTA addresses as usernme (comma seperated) and a random Password",
     services = { "IOTA" }
 }
@@ -104,7 +104,9 @@ function requestIOTAQuantitiesForIOTAAddresses(iotaAddresses)
     headers["X-IOTA-API-Version"] = "1"
 
     local postContent = '{"command":"getBalances","addresses":['.. strjoin(',', iotaAddressesWithoutChecksum) ..'],"threshold":100}'
+    print(postContent)
     content = connection:request("POST", iotaRequestUrl(), postContent, "application/json", headers)
+    print(content)
 
     json = JSON(content)
     return json:dictionary()["balances"]
@@ -117,7 +119,7 @@ function cryptocompareRequestUrl()
 end
 
 function iotaRequestUrl()
-    return "https://iotanode.host/node"
+    return "https://nodes.thetangle.org:443"
 end
 
 -- from http://lua-users.org/wiki/SplitJoin
