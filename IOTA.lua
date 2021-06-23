@@ -8,7 +8,7 @@
 
 -- MIT License
 
--- Copyright (c) 2020 PSperber, aaronk6
+-- Copyright (c) 2021 PSperber, aaronk6
 
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@
 
 
 WebBanking {
-    version = 0.3,
+    version = 0.4,
     description = "Include your IOTAs as cryptoportfolio in MoneyMoney by providing IOTA addresses as usernme (comma seperated) and a random Password",
     services = { "IOTA" }
 }
@@ -119,7 +119,7 @@ function cryptocompareRequestUrl()
 end
 
 function iotaRequestUrl()
-    return "https://nodes.thetangle.org:443"
+    return "https://nodes.iota.org"
 end
 
 -- from http://lua-users.org/wiki/SplitJoin
